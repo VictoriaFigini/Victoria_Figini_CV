@@ -1,13 +1,22 @@
-/*---------Layout-----------*/
-/* colores:  #f7f1e7, #A2A3A0,  #E4D5C3 */
+/*-------------BASIC-------------- */
+/* colores:  #f7f1e7, #A2A3A0,  #E4D5C3 
+   font-family: 'Comfortaa', cursive;*/
 
-*{
-    /* color: rgb(55, 53, 53); */
-    font-family: 'Comfortaa', cursive;
 
-}
 
 /*----------General------------*/
+html {
+    background-color:  #dfe1e2;
+    font-family: 'Comfortaa', cursive;
+}
+  
+body {
+    min-height: 100vh;
+    opacity: 1;
+    margin: 0px 80px 80px 80px;
+    padding: 0;
+}
+
 h1, h2{
     text-transform: uppercase;
 }
@@ -19,6 +28,67 @@ article ul{
     list-style-type: square;
 }
 
+/*----------Header----------*/
+header{
+    padding: 0;
+}
+#settings {
+    display: flex;
+    justify-content: right;
+    top: 5%;
+    left: 5%;
+    align-items: right;
+    width: 100%;
+    height: 100px;
+
+}
+
+#settings a {
+    line-height: 35px;
+    display: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: #91928f61;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20px;
+    margin-top: 30px;
+
+}
+
+#settings img {
+    width: 80%;
+    padding: 4px;
+}
+#settings a:hover {
+    -webkit-transform:scale(1.2);
+    -moz-transform:scale(1.2);
+    -o-transform:scale(1.2);
+    transition:all .2s ease;
+    -webkit-transition:all .2s ease;
+    -moz-transition:all .2s ease;
+    -o-transition:all .2s ease;
+    z-index: 5;
+    background-color: #f7f1e7;
+}
+
+#social a span {
+    position: absolute;
+    left: 50%;
+    color: #FFF;
+    display: none;
+    border-bottom: 2px solid #38c;
+    padding-bottom: 8px;
+    background-color: #555;
+    top: 40px;
+    height: 20px;
+    line-height: 20px;
+    border-radius: 5px;
+    font-size: 80%;
+    white-space: nowrap;
+}
+  
 /*----------Aside------------*/
 aside{
     background-color: #91928f;
@@ -28,11 +98,13 @@ aside{
     width: 30%;
     margin: 20px 20px 20px 30px;
     padding: 40px;
+    box-shadow: 1px 1px 6px 1px  #7b7c7a inset;
 }
 aside h2{
     color: #f7f1e7;
     text-transform: uppercase;
     letter-spacing: 3px;
+    margin-top: 40px;
 }
 aside section h2:first-child{
     border-bottom: 2px solid #f7f1e7;
@@ -54,6 +126,8 @@ aside li, li > a{
     border-radius: 50%;
     width: 115%;
     background-image: url("../img/gray-bg.jpg");
+    box-shadow: 1px 2px 3px  rgb(139, 139, 139) , 0px 0px 0px 3pxrgb(178, 176, 176);
+
 }
 
 .github{
@@ -99,12 +173,15 @@ meter::-webkit-meter-bar{
 main{
     flex-basis: 60%;
     flex-wrap: wrap;
-    margin: 20px 20px 20px 0px;
+    margin: 20px 0px 20px 0px;
 }
 main p{
     text-align: justify;
     line-height: 1.5em;
     padding: 5px;
+}
+main section{
+    margin: 0;
 }
 main section > h2{
     text-transform: uppercase;
@@ -113,8 +190,11 @@ main section > h2{
 
 .main-cointainer{
     display: flex;
-    margin: 40px auto;
+    flex-basis: 100%;
+    /* margin: 40px auto; */
     flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 60px 1px  #91928f;
 
 }
 .hero{
@@ -160,15 +240,22 @@ article h2{
 }
 article h3, article h4, article h5{
     font-weight: bold;
-    margin: 15px 0 0 0;
+    margin: 0px 0 8px 0;
 }
 
 .generic ul li {
-    list-style-type: square;
+    list-style-type: circle;
+    margin-bottom: 5px;
+}
+
+.generic span{
+    font-style: italic;
+    font-size: 12;
 }
 
 .cert{
     font-weight: bold;
+    line-height: 1.4;
 }
 
 .institude{
@@ -189,7 +276,13 @@ article h3, article h4, article h5{
 
 .references-pic{
     /* object-fit: cover; */
-    width: 50px;   
+    width: 50%;   
+    position: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.references img{
     position: relative;
     left: 30%;
     top: 30%;
@@ -198,14 +291,29 @@ article h3, article h4, article h5{
 .references article{
     width: 50%;
     display: block;
+    align-items: center;
+    justify-content: center;
 }
 
 .references p{
     text-align: center;
     margin:0;
     padding: 0;
-    
+    font-size: 14px;    
+}
+
+.references h4, .references h5{
+    margin: 3px 0 3px 0 ;
 }
 /*----------Footer----------*/
 
-@media (max-width):
+@media (max-width: 1119px){
+    aside{
+        width: 100%;
+        margin-left: 70px;
+    }
+    main{
+        width: 100%;
+        align-items: center;
+    }
+}  
