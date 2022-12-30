@@ -85,7 +85,7 @@ header{
     z-index: 5;
 }
 
-#social a span {
+#settings a span {
     position: absolute;
     left: 50%;
     color: #FFF;
