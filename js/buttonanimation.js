@@ -13,11 +13,11 @@ $(document).ready(function() {
     $(this).hover (
       function() {
         $(this).children('span').fadeIn();
-        $('#social a').css('opacity','.1');
+        $('#settings a').css('opacity','.1');
         $(this).css('opacity','1');
       }, function() {
         $(this).children('span').fadeOut();
-        $('#social a').css('opacity','1');
+        $('#settings a').css('opacity','1');
       }
     );
   });                    
