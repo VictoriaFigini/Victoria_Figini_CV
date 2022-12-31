@@ -9,12 +9,13 @@
 html {
     background-color:  #dfe1e2;
     font-family: 'Comfortaa', cursive;
+    padding: 0;
+    margin: o;
 }
   
 body {
     min-height: 100vh;
     opacity: 1;
-    margin: 0px 80px 80px 80px;
     padding: 0;
 }
 
@@ -31,7 +32,7 @@ article ul{
 
 /*----------Header----------*/
 header{
-    padding: 0;
+    padding-right: 0;
 }
 #settings {
     display: flex;
@@ -39,8 +40,9 @@ header{
     top: 5%;
     left: 5%;
     align-items: right;
-    width: 100%;
+    width: 95%;
     height: 100px;
+    padding: 0;
 
 }
 
@@ -138,7 +140,7 @@ aside li, li > a{
     border-radius: 50%;
     width: 115%;
     background-image: url("../img/gray-bg.jpg");
-    box-shadow: 1px 2px 3px  rgb(139, 139, 139) , 0px 0px 0px 3pxrgb(178, 176, 176);
+    box-shadow: 1px 2px 3px  rgb(139, 139, 139) , 0px 0px 0px 3px rgb(178, 176, 176);
 
 }
 
@@ -153,6 +155,10 @@ aside li, li > a{
 
 .linkedin{
     list-style-image: url('../img/linkedin.jpg');
+}
+
+.site{
+    list-style-image: url('../img/site.jpg');
 }
 
 .email{
@@ -183,7 +189,7 @@ meter::-webkit-meter-bar{
 }
 /*----------Main------------*/
 main{
-    flex-basis: 60%;
+    flex-basis: 62%;
     flex-wrap: wrap;
     margin: 20px 0px 20px 0px;
 }
@@ -203,11 +209,10 @@ main section > h2{
 .main-cointainer{
     display: flex;
     flex-basis: 100%;
-    /* margin: 40px auto; */
     flex-wrap: wrap;
     background-color: #ffffff;
     box-shadow: 1px 1px 60px 1px  #91928f;
-
+    margin: 0px 65px 0px 80px;
 }
 .hero{
     background-color: #E4D5C3;
@@ -314,12 +319,37 @@ article h3, article h4, article h5{
     font-size: 14px;    
 }
 
-.references h4, .references h5{
+.references h4, .references h5 {
     margin: 3px 0 3px 0 ;
 }
 /*----------Footer----------*/
 
-@media (max-width: 1119px){
+.footer-container {
+    display: flex;
+    flex: wrap;
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    height: 50px;
+    margin: -10px;
+    margin-top: 100px;
+    background-color:  #f7f1e7;
+    box-shadow: 1px 1px 60px 1px  #91928f;
+
+    
+}
+
+.footer-container a{
+    text-decoration:none;
+    color: #52434a;
+    font-weight: bold;
+}
+
+
+
+/*-------------------------*/
+
+@media (max-width: 1119px) {
     aside{
         width: 100%;
         margin-left: 70px;
