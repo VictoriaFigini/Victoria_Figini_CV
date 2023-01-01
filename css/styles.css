@@ -194,14 +194,14 @@ meter::-webkit-meter-bar{
 }
 /*----------Main------------*/
 main{
-    flex-basis: 62%;
+    flex-basis: 63.5%;
     flex-wrap: wrap;
-    margin: 20px 0px 20px 0px;
+    margin: 20px 20px 20px 0px;
+    padding: 0;
 }
 main p{
     text-align: justify;
     line-height: 1.5em;
-    padding: 5px;
 }
 main section{
     margin: 0;
@@ -218,6 +218,7 @@ main section > h2{
     background-color: #ffffff;
     box-shadow: 1px 1px 60px 1px  #91928f;
     margin: 0px 65px 0px 80px;
+    padding: 0;
 }
 .hero{
     background-color: #E4D5C3;
@@ -355,12 +356,65 @@ article h3, article h4, article h5{
 /*-------------------------*/
 
 @media (max-width: 1119px) {
+
+    .main-cointainer{
+
+    }
     aside{
+        margin-left: 5px;
+        flex-basis: 10%;
+        flex-wrap: wrap;
+        color: white;
+        width: 25%;
+        margin-left: 20px;
+        padding-left: 15px;
+    }
+
+    aside a{
+        font-size: 13px;
+    }
+    main{
+        flex-basis: 62%;
+        flex-wrap: wrap;
+        margin: 20px 0px 20px 0px;
+    }
+    .hero h1{
+        font-size: 40px;
+    }
+
+    .hero h2{
+        font-size: 20px;
+    }
+}  
+
+@media (max-width: 991px) {
+    body{
+        padding: 0;
+    }
+    .main-cointainer{
+        width:  100%;
+        margin: 0;
+        padding: 0;
+        justify-content: center;
+        justify-items: center;
+    }
+    aside{
+        margin-top: 360px;
+        padding-left: 40px;
         width: 100%;
-        margin-left: 70px;
     }
     main{
         width: 100%;
-        align-items: center;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
     }
-}  
+
+    .hero{
+        top: 10%;
+        left: 0;
+        width: 90%;
+        position: absolute;
+
+    }
+} 
