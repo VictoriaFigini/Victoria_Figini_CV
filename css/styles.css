@@ -194,7 +194,7 @@ meter::-webkit-meter-bar{
 }
 /*----------Main------------*/
 main{
-    flex-basis: 63.5%;
+    flex-basis: 62%;
     flex-wrap: wrap;
     margin: 20px 20px 20px 0px;
     padding: 0;
