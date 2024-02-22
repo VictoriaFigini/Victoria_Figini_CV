@@ -1,7 +1,7 @@
 /*-------------BASIC-------------- */
 /* colores:  #f7f1e7, #A2A3A0,  #E4D5C3 
-   font-family: 'Comfortaa', cursive;*/
-   @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
+font-family: 'Comfortaa', cursive;*/
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&display=swap');
 
 
 
@@ -107,6 +107,17 @@ header{
     font-size: 80%;
     white-space: nowrap;
 }
+
+.main-cointainer{
+    display: flex;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    background-color: #ffffff;
+    box-shadow: 1px 1px 60px 1px  #91928f;
+    margin: 0px 65px 0px 65px;
+    padding: 40px;
+    justify-content: space-around;
+}
   
 /*----------Aside------------*/
 aside{
@@ -114,8 +125,7 @@ aside{
     flex-basis: 25%;
     flex-wrap: wrap;
     color: white;
-    width: 30%;
-    margin: 20px 20px 20px 30px;
+    margin: 0px 20px 0px 0px;
     padding: 40px;
     box-shadow: 1px 1px 6px 1px  #7b7c7a inset;
 }
@@ -194,9 +204,9 @@ meter::-webkit-meter-bar{
 }
 /*----------Main------------*/
 main{
-    flex-basis: 61%;
+    flex-basis: 65%;
     flex-wrap: wrap;
-    margin: 20px 20px 20px 0px;
+    margin: 0px;
     padding: 0;
 }
 main p{
@@ -211,15 +221,6 @@ main section > h2{
     letter-spacing: 5px;
 }
 
-.main-cointainer{
-    display: flex;
-    flex-basis: 100%;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-    box-shadow: 1px 1px 60px 1px  #91928f;
-    margin: 0px 65px 0px 80px;
-    padding: 0;
-}
 .hero{
     background-color: #E4D5C3;
     box-shadow: 1px 1px 6px 1px rgb(228, 194, 152) inset;
@@ -352,10 +353,7 @@ article h3, article h4, article h5{
 
 @media (max-width: 1280px) {
 
-    .main-cointainer{
-
-    }
-    aside{
+    /* aside{
         margin-left: 5px;
         flex-basis: 10%;
         flex-wrap: wrap;
@@ -363,16 +361,16 @@ article h3, article h4, article h5{
         width: 25%;
         margin-left: 20px;
         padding-left: 15px;
-    }
+    } */
 
     aside a{
         font-size: 13px;
     }
-    main{
+    /* main{
         flex-basis: 62%;
         flex-wrap: wrap;
         margin: 20px 0px 20px 0px;
-    }
+    } */
     .hero h1{
         font-size: 40px;
     }
@@ -386,13 +384,7 @@ article h3, article h4, article h5{
     body{
         padding: 0;
     }
-    .main-cointainer{
-        width:  100%;
-        margin: 0;
-        padding: 0;
-        justify-content: center;
-        justify-items: center;
-    }
+
     aside{
         margin-top: 360px;
         padding-left: 40px;
