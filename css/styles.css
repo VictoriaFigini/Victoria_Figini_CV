@@ -365,7 +365,7 @@ article h3, article h4, article h5{
 
 /*-------------------------*/
 
-@media (max-width: 1280px) {
+@media (max-width: 1331px) {
     #profile-pic img{
         width: 50%;
     }
@@ -401,7 +401,8 @@ article h3, article h4, article h5{
     }
 }  
 
-@media (max-width: 991px) {
+@media (max-width: 1024px) {
+    px) {
     #profile-pic img{
         width: 50%;
     }
